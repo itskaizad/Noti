@@ -5,25 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Noti"
         mc:Ignorable="d"
-        Title="Noti" Height="350" Width="525">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
+        Title="Noti" Height="350" Width="525" Background="WhiteSmoke">
 
-        <StackPanel Grid.ColumnSpan="2" Grid.Row="0" Height="60" Background="WhiteSmoke" Orientation="Horizontal">
-            <Image Margin="10" Source="tempLogo.png"></Image>
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Image Margin="10" Source="tempLogo.png" Height="70" Width="70"></Image>
             <TextBlock Height="auto" VerticalAlignment="Center" FontSize="25" Foreground="#FFDC5050" RenderOptions.BitmapScalingMode="HighQuality">Noti</TextBlock>
-            <Image Margin="15" Source="SyncIcon.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
-            <Image Margin="15" Source="SettingsIcon.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
-            <Image Margin="15" Source="AddIcon.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
         </StackPanel>
-        
-        
-    </Grid>
+        <TextBlock HorizontalAlignment="Center">Username</TextBlock>
+        <TextBox Width="150"></TextBox>
+        <TextBlock HorizontalAlignment="Center">Password</TextBlock>
+        <TextBox Width="150"></TextBox>
+        <Button Height="25" Width="100" Margin="5">
+            <TextBlock>Login</TextBlock>
+        </Button>
+    </StackPanel>
+    
 </Window>
