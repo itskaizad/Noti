@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace Noti
 {
     /// <summary>
-    /// Interaction logic for LoginPage.xaml
+    /// Interaction logic for ReminderPage.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class ReminderPage : Page
     {
-        public LoginPage()
+        public ReminderPage()
         {
             InitializeComponent();
         }
-        
-        private void LoginClick(object sender, RoutedEventArgs e)
-        {
-            if(usernameField.Text == "itskaizad")
-            {
-                (MainWindow.GetWindow(this) as MainWindow).MainFrame.Content = new ReminderPage();
-            }
-        }
-
-        
     }
 }

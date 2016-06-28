@@ -23,6 +23,28 @@ namespace Noti
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new LoginPage();
         }
+
+        public static Window GetParentWindow(DependencyObject child)
+        {
+            DependencyObject parentObject = VisualTreeHelper.GetParent(child);
+
+            if (parentObject == null)
+            {
+                return null;
+            }
+
+            Window parent = parentObject as Window;
+            if (parent != null)
+            {
+                return parent;
+            }
+            else
+            {
+                return GetParentWindow(parentObject);
+            }
+        }
+
     }
 }
