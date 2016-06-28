@@ -27,7 +27,7 @@ namespace Noti
         
         private void LoginClick(object sender, RoutedEventArgs e)
         {
-            if(usernameField.Text == "itskaizad")
+            if(usernameField.Text == "")
             {
                 (MainWindow.GetWindow(this) as MainWindow).MainFrame.Content = new ReminderPage();
             }

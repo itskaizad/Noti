@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Noti"
         mc:Ignorable="d"
-        Title="Notifire Desktop" Height="auto" Width="auto" SizeToContent="WidthAndHeight" Background="WhiteSmoke" d:DesignWidth="548.955" d:DesignHeight="307.591">
+        Title="Notifire Desktop" Height="auto" Width="auto" MinWidth="700" MinHeight="500"
+        SizeToContent="WidthAndHeight" Background="WhiteSmoke" d:DesignWidth="548.955" d:DesignHeight="307.591">
 
     <Grid>
-        <Frame Name="MainFrame" Margin="10" NavigationUIVisibility="Hidden"></Frame>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 
 
