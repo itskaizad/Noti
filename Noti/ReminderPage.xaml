@@ -29,7 +29,15 @@
 
         <ListBox Name="ReminderListBox" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Stretch" Background="#FCFCFC"
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Visible">
-            
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <StackPanel>
+                        <Grid>
+                            <local:ListItem />
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
 
     </Grid>

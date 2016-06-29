@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,23 +16,13 @@ using System.Windows.Shapes;
 namespace Noti
 {
     /// <summary>
-    /// Interaction logic for ReminderPage.xaml
+    /// Interaction logic for ListItem.xaml
     /// </summary>
-    public partial class ReminderPage : Page
+    public partial class ListItem : UserControl
     {
-        private ObservableCollection<Reminder> ReminderList;
-
-        public ReminderPage()
+        public ListItem()
         {
             InitializeComponent();
-            ReminderList = new ObservableCollection<Reminder>();
-
-            //test code
-            ReminderList.Add(new Reminder());
-            ReminderList.Add(new Reminder());
-            ReminderList.Add(new Reminder());
-
-            ReminderListBox.ItemsSource = ReminderList;
         }
     }
 }
