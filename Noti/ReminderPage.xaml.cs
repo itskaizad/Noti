@@ -35,5 +35,10 @@ namespace Noti
 
             ReminderListBox.ItemsSource = ReminderList;
         }
+
+        private void ReminderListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

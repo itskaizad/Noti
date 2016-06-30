@@ -12,7 +12,7 @@
 
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="600" Height="400">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="40">
-            <Image Margin="10" Source="tempLogo.png" Height="70" Width="70"></Image>
+            <Image Margin="10" Source="notifire_logo_128.png" Height="70" Width="70"></Image>
             <TextBlock Height="auto" VerticalAlignment="Center" FontSize="25" Foreground="#FFDC5050" RenderOptions.BitmapScalingMode="HighQuality">Notifire</TextBlock>
         </StackPanel>
         <!--<TextBlock HorizontalAlignment="Center" FontSize="18">Username</TextBlock>-->
